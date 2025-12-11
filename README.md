@@ -212,11 +212,11 @@ PROYECTO-JUEVES/
 ```
 
 
-```markdown
+
 ## ✍️ Autores
 
-* **Danna Segura**: https://github.com/DannaSegura2
-* **Nicol Amaya**: https://github.com/nicolamaya
-* **Jhon Medina**: https://github.com/Kanciro 
-```
+**Danna Segura**: https://github.com/DannaSegura2
+**Nicol Amaya**: https://github.com/nicolamaya
+**Jhon Medina**: https://github.com/Kanciro 
+
 
