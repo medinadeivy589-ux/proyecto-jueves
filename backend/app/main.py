@@ -15,6 +15,8 @@ app = FastAPI(title="Todo List FastAPI - Final Integrador")
 origins = [
     "*", # Dejar en "*" durante el desarrollo.
     # Cuando despliegues: "https://[tu-dominio].vercel.app" 
+    "https://proyecto-jueves.onrender.com"
+    "https://proyecto-jueves-hsibt75w1-jhons-projects-d1b2eaad.vercel.app"
 ]
 
 app.add_middleware(
