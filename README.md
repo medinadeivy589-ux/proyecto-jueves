@@ -164,6 +164,7 @@ La documentación detallada de la arquitectura, endpoints y procesos se encuentr
 
 📂 Estructura del Proyecto Final Integrador
 
+```text
 PROYECTO-JUEVES/
 ├── .github/
 │   └── workflows/
@@ -208,3 +209,4 @@ PROYECTO-JUEVES/
 │   └── vite.config.js         # Configuración de Vite
 ├── package-lock.json          # ¿Dependencias globales? (Espera, esto está duplicado)
 └── README.md                  # Documentación principal del proyecto
+```
