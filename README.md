@@ -210,3 +210,13 @@ PROYECTO-JUEVES/
 ├── package-lock.json          # ¿Dependencias globales? (Espera, esto está duplicado)
 └── README.md                  # Documentación principal del proyecto
 ```
+
+
+```markdown
+## ✍️ Autores
+
+* **Danna Segura**
+* **Nicol Amaya**
+* **Jhon Medina**
+```
+
