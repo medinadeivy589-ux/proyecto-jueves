@@ -159,3 +159,52 @@ La documentación detallada de la arquitectura, endpoints y procesos se encuentr
 *Última actualización: Diciembre 2025*
 *Desarrollador: [Tu Nombre Completo]*
 *Repositorio: `https://github.com/<TU_USUARIO>/<TU_REPOSITORIO>`*
+
+
+
+📂 Estructura del Proyecto Final Integrador
+
+PROYECTO-JUEVES/
+├── .github/
+│   └── workflows/
+│       └── ci.yml             # Configuración de Integración Continua
+├── backend/                   # Carpeta del Backend (API)
+│   ├── app/
+│   │   ├── core/
+│   │   │   ├── config.py      # Configuraciones de la aplicación
+│   │   │   └── database.py    # Conexión a la base de datos
+│   │   ├── models/
+│   │   │   └── todo.py        # Modelos de la base de datos (Ej: Tarea)
+│   │   ├── routers/
+│   │   │   └── todo.py        # Endpoints de la API para 'todo'
+│   │   ├── schemas/
+│   │   │   └── todo.py        # Esquemas de datos para validación (Pydantic)
+│   │   └── main.py            # Punto de entrada de la aplicación FastAPI
+│   ├── .env                   # Variables de entorno
+│   └── requirements.txt       # Dependencias de Python
+├── documentacion/
+│   └── api.md                 # Documentación de la API
+├── frontend/                  # Carpeta del Frontend (Aplicación Web)
+│   ├── public/                # Archivos públicos (imágenes, etc.)
+│   ├── src/
+│   │   ├── assets/            # Archivos estáticos (íconos, etc.)
+│   │   ├── components/        # Componentes reutilizables de React
+│   │   │   ├── TodoForm.jsx
+│   │   │   └── TodoItem.jsx
+│   │   ├── pages/             # Componentes que representan páginas/vistas
+│   │   │   └── TodoListPage.jsx
+│   │   ├── services/          # Lógica para comunicarse con la API
+│   │   │   └── api.js
+│   │   ├── App.css
+│   │   ├── App.jsx            # Componente principal de React
+│   │   ├── index.css
+│   │   └── main.jsx           # Punto de entrada de la aplicación React
+│   ├── .env.development       # Variables de entorno para desarrollo
+│   ├── .gitignore             # Archivos a ignorar por Git
+│   ├── .eslintrc.cjs          # Configuración de ESLint (Linting de JS/JSX)
+│   ├── package-lock.json      # Bloqueo de dependencias de Node
+│   ├── package.json           # Dependencias de Node
+│   ├── README.md              # Documentación del Frontend (Opcional)
+│   └── vite.config.js         # Configuración de Vite
+├── package-lock.json          # ¿Dependencias globales? (Espera, esto está duplicado)
+└── README.md                  # Documentación principal del proyecto
