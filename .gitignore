@@ -1,0 +1,19 @@
+# /.gitignore
+
+# --- Dependencias de Node (Frontend) ---
+/frontend/node_modules
+/frontend/dist 
+/frontend/.env* # Excluye todas las variables de entorno del frontend
+
+# --- Entornos Virtuales de Python (Backend) ---
+/backend/.venv
+/backend/mi_entorno
+/backend/env
+/backend/__pycache__
+
+# --- Archivos de Entorno Locales (SECRETO) ---
+/backend/.env # ¡CRÍTICO! Excluye la cadena de conexión de Railway
+
+# --- macOS/Windows ---
+.DS_Store
+Thumbs.db

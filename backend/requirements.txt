@@ -1,0 +1,8 @@
+# backend/requirements.txt
+fastapi
+uvicorn[standard]
+pydantic[dotenv]
+# Para Bases de datos SQL (ORM)
+SQLAlchemy 
+# Driver para MySQL
+mysqlclient

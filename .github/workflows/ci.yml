@@ -1,0 +1,42 @@
+# /.github/workflows/ci.yml
+name: CI/CD - Build y Pruebas
+
+on: 
+  # Ejecutar en cada push a cualquier rama y en cada pull request
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main", "develop" ]
+  
+# Requisito de Jobs mínimos [cite: 103]
+jobs:
+  build_frontend:
+    # Usar el sistema operativo Ubuntu para la ejecución
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Checkout del código
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      # 2. Configurar Node.js (necesario para React/Vite)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Usar una versión LTS reciente
+          # Configuración de cache para acelerar 'npm install'
+          cache: 'npm'
+          cache-dependency-path: 'frontend/package-lock.json' 
+
+      # 3. Instalación de dependencias del Frontend [cite: 104, 105]
+      - name: Install Frontend Dependencies
+        working-directory: ./frontend 
+        run: npm install 
+
+      # 4. Ejecutar el Build del Frontend (Requisito: El pipeline debe fallar si falla el build) [cite: 106, 108]
+      - name: Build Frontend
+        working-directory: ./frontend
+        # Esto valida que Vite pueda generar el directorio 'dist'
+        run: npm run build 
+
+      # Opcional: Podrías añadir pruebas de backend (ej. flake8 o pytest) aquí.
